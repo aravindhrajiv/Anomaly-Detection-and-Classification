@@ -106,6 +106,7 @@ We make a simple Convolutional Neural Network (CNN) inorder to perform this clss
    * Model Architecture : (Best one)
    
    X_input --> Conv Layer 1 --> Pool Layer 1 --> Conv Layer 2 --> Pool Layer 2 --> Conv Layer 3 --> Pool Layer 3 --> Conv Layer 4 --> Pool Layer 4 --> Flatten --> FC Layer 1 --> FC Layer 2
+   
        * X_input : Shape - (?,64,64,3)
        * Conv Layer 1 : Shape - (?,64,64,8)
            * fitler_size = 8, conv_size = 16, stride = 1, padding = same, l2 regularizer = 1e-5
