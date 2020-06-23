@@ -89,6 +89,16 @@ To avoid shortcomings of manual detection, an automated optical inspection (AOI)
     * Creating a CSV file regarding the input file, type of defect, location coordinates of defect and other information.
     
       ![ss_7](https://user-images.githubusercontent.com/67309253/85380235-52db2880-b55a-11ea-9de8-f628d5014745.PNG)
-    
-    
+  
+4. #### Classification Algorithm ####
+We make a simple Convolutional Neural Network (CNN) inorder to perform this clssification of defects task.
+   
+   * Data Pre-processing for CNN :
+       1. One-hot encoding of defect classes - target 
+       2. Image Resizing to (64x64x3)
+       3. Data standarization - Dividing the pixels values by 255
+       4. Random Splitting of dataset into 80% Training and 20% Testing
+       
+      Final shapes of the arrays:
+      ![ss_8](https://user-images.githubusercontent.com/67309253/85381841-00027080-b55c-11ea-863b-71fea4f7340b.PNG)
     
