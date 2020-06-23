@@ -64,6 +64,7 @@ To avoid shortcomings of manual detection, an automated optical inspection (AOI)
          * Adaptive Thresholding
          * Image Subtraction
          * Mathematical Morphology:
+         
                1. Opening with 2x2
                2. Closing with 15x15
                3. Median filtering with 5x5
