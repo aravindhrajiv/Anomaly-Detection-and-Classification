@@ -39,7 +39,7 @@ To avoid shortcomings of manual detection, an automated optical inspection (AOI)
     
 # Code Description
 1. Reading the input images from the dataset directory and storing in data and template lists
-2. ### Image Processing Algorithms ###
+2. ##### Data Pre-Processing steps #####
    * Converting the images to grayscale and applying a Median Filter for denoising.
    ![ss_1](https://user-images.githubusercontent.com/67309253/85375646-3b00a600-b554-11ea-9476-5fe5b8f94644.PNG)
            
@@ -47,7 +47,8 @@ To avoid shortcomings of manual detection, an automated optical inspection (AOI)
    This is an algorithm deployed to overcome 2 main issues of the dataset provided.
        * Rotational Variance - The imput image may not be inclided as per the template image
        * Background Subtraction - The input image may contain other info apart from the template image.
-   The set of algorithms followed in Image Registration:
+       
+       The set of algorithms followed in Image Registration:
        1. **SIFT** (Keypoints Descriptor):
        To find the keypoints which decsribes the input and template images.
        2. **Brute Force Matcher** (Keypoints Matching):
@@ -56,6 +57,8 @@ To avoid shortcomings of manual detection, an automated optical inspection (AOI)
        To decide on the percentage of points that needed to matched from template to input image. We set it as 100% in our example.
        4. **Homography** :
        The input image is brought into the template's shape,allignment, etc.
+       ![ss_2](https://user-images.githubusercontent.com/67309253/85377511-d561e900-b556-11ea-99fd-611e84c00baf.PNG)
+
 
     
     
