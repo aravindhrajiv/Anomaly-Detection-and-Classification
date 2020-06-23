@@ -101,5 +101,51 @@ We make a simple Convolutional Neural Network (CNN) inorder to perform this clss
        
       Final shapes of the arrays:
       
-          ![ss_8](https://user-images.githubusercontent.com/67309253/85381841-00027080-b55c-11ea-863b-71fea4f7340b.PNG)
+        ![ss_8](https://user-images.githubusercontent.com/67309253/85381841-00027080-b55c-11ea-863b-71fea4f7340b.PNG)
     
+   * Model Architecture : (Best one)
+   X_input --> Conv Layer 1 --> Pool Layer 1 --> Conv Layer 2 --> Pool Layer 2 --> Conv Layer 3 --> Pool Layer 3 --> Conv Layer 4 --> Pool Layer 4 --> Flatten --> FC Layer 1 --> FC Layer 2
+       * X_input : Shape - (?,64,64,3)
+       * Conv Layer 1 : Shape - (?,64,64,8)
+           * fitler_size = 8, conv_size = 16, stride = 1, padding = same, l2 regularizer = 1e-5
+           * BatchNormalization
+           * RELU activation
+       * Pool Layer 1 : Shape - (?,32,32,8)
+           * max pooling - pool_size = 2
+       * Conv Layer 2 : Shape - (?,32,32,16)
+           * fitler_size = 16, conv_size = 8, stride = 1, padding = same, l2 regularizer = 1e-5
+           * BatchNormalization
+           * RELU activation
+       * Pool Layer 2 : Shape - (?,16,16,16)
+           * max pooling - pool_size = 2
+       * Conv Layer 3 : Shape - (?,16,16,32)
+           * fitler_size = 32, conv_size = 4, stride = 1, padding = same, l2 regularizer = 1e-5
+           * BatchNormalization
+           * RELU activation
+       * Pool Layer 3 : Shape - (?,8,8,32)
+           * max pooling - pool_size = 2
+       * Conv Layer 4 : Shape - (?,8,8,64)
+           * fitler_size = 64, conv_size = 2, stride = 1, padding = same, l2 regularizer = 1e-5
+           * BatchNormalization
+           * RELU activation
+       * Pool Layer 4 : Shape - (?,2,2,64)
+           * max pooling - pool_size = 4
+       * Flatten : Shape - (?,256)
+       * FC Layer 1 : Shape - (?,64)
+           * Dense - RELU activation, l2 regularizer = 1e-5
+       * FC Layer 2 : Shape - (?,6)
+           * Dense - Softmax activation, l2 regularizer = 1e-5
+   
+   * Model Creation:
+       * Optimizer - ADAM
+       * Loss - Categorical CrossEntropy
+       * Metrics - Accuracy
+       
+   * Hyperparameters Tuned:
+        1. No. of epochs = 40
+        2. Mini-batch size = 16
+        3. l2 regularizers = 1e-5
+        4. Spatial Dropouts2D - only for experiments (not in main model)
+        5. Dropouts - only for experiments (not in main model)
+        
+ 5. Marking the defect using detection algorithm and predicting the class of defect using the classification algorithm in the input images. Later, storing the output images in a different directory.
