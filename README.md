@@ -72,12 +72,23 @@ To avoid shortcomings of manual detection, an automated optical inspection (AOI)
                5. Opening with 3x3
                6. Opening with 1x1
                
+         ![ss_3](https://user-images.githubusercontent.com/67309253/85380133-317a3c80-b55a-11ea-9eae-4cf0c58c7b91.PNG)
+               
     * IP Algorithm 2: This algorithm was effective to find out the remaining 2 types of defects. 
          * Image Subtraction
          * Binary Thresholding 
          
+      ![ss_4](https://user-images.githubusercontent.com/67309253/85380218-4c4cb100-b55a-11ea-8ecd-4f2109101e89.PNG)
+         
     * Combining both the algorithms and taking out the best results out of them
+    
+      ![ss_5](https://user-images.githubusercontent.com/67309253/85380247-553d8280-b55a-11ea-8f6d-ea80ad8c2a8a.PNG)
     * Creating a bounding box around the identified defects and snipping them out of the input image and storing those defects in the respective defect directory (tagging). These would be our input for the classification algorithm.
+    
+      ![ss_6](https://user-images.githubusercontent.com/67309253/85380244-540c5580-b55a-11ea-9a26-7e6f8af7da9f.PNG)
+    * Creating a CSV file regarding the input file, type of defect, location coordinates of defect and other information.
+    
+      ![ss_7](https://user-images.githubusercontent.com/67309253/85380235-52db2880-b55a-11ea-9de8-f628d5014745.PNG)
     
     
     
