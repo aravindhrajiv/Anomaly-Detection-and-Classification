@@ -104,6 +104,7 @@ We make a simple Convolutional Neural Network (CNN) inorder to perform this clss
         ![ss_8](https://user-images.githubusercontent.com/67309253/85381841-00027080-b55c-11ea-863b-71fea4f7340b.PNG)
     
    * Model Architecture : (Best one)
+   
    X_input --> Conv Layer 1 --> Pool Layer 1 --> Conv Layer 2 --> Pool Layer 2 --> Conv Layer 3 --> Pool Layer 3 --> Conv Layer 4 --> Pool Layer 4 --> Flatten --> FC Layer 1 --> FC Layer 2
        * X_input : Shape - (?,64,64,3)
        * Conv Layer 1 : Shape - (?,64,64,8)
@@ -148,4 +149,16 @@ We make a simple Convolutional Neural Network (CNN) inorder to perform this clss
         4. Spatial Dropouts2D - only for experiments (not in main model)
         5. Dropouts - only for experiments (not in main model)
         
- 5. Marking the defect using detection algorithm and predicting the class of defect using the classification algorithm in the input images. Later, storing the output images in a different directory.
+ 5. Saving the model. Sending the entire defect dataset for the model.
+ 6. Marking the defect using detection algorithm and predicting the class of defect using the classification algorithm in the input images. Later, storing the output images in a different directory.
+
+# Results
+
+   * Detection: Detected most of the major defects
+   * Classification:
+        1. Training Accuracy - 93.8%
+        2. Testing Accuracy - 93.2%
+   * Confusion Matrix for the entire dataset:
+   
+     ![ss_9](https://user-images.githubusercontent.com/67309253/85394133-b883e080-b56b-11ea-8cbb-27e139e6f26c.PNG)
+   
