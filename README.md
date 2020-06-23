@@ -58,8 +58,25 @@ To avoid shortcomings of manual detection, an automated optical inspection (AOI)
        4. **Homography** :
        The input image is brought into the template's shape,allignment, etc.
        ![ss_2](https://user-images.githubusercontent.com/67309253/85377511-d561e900-b556-11ea-99fd-611e84c00baf.PNG)
-
-
+       
+ 3. #### Detection Algorithm ####
+    * IP Algorithm 1 : This algorithm was effective to find out 4 types of defects out of the 6 mentioned. 
+         * Adaptive Thresholding
+         * Image Subtraction
+         * Mathematical Morphology:
+               1. Opening with 2x2
+               2. Closing with 15x15
+               3. Median filtering with 5x5
+               4. Closing with 29x29 ellipse
+               5. Opening with 3x3
+               6. Opening with 1x1
+               
+    * IP Algorithm 2: This algorithm was effective to find out the remaining 2 types of defects. 
+         * Image Subtraction
+         * Binary Thresholding 
+         
+    * Combining both the algorithms and taking out the best results out of them
+    * Creating a bounding box around the identified defects and snipping them out of the input image and storing those defects in the respective defect directory (tagging). These would be our input for the classification algorithm.
     
     
     
