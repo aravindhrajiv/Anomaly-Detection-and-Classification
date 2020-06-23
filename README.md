@@ -151,7 +151,12 @@ We make a simple Convolutional Neural Network (CNN) inorder to perform this clss
         5. Dropouts - only for experiments (not in main model)
         
  5. Saving the model. Sending the entire defect dataset for the model.
+ 
+  ![ss_10](https://user-images.githubusercontent.com/67309253/85394805-c0905000-b56c-11ea-9cb2-744bc28bb4f6.PNG)
+   ![ss_11](https://user-images.githubusercontent.com/67309253/85394801-bff7b980-b56c-11ea-812e-d9603516d27b.PNG)
+   
  6. Marking the defect using detection algorithm and predicting the class of defect using the classification algorithm in the input images. Later, storing the output images in a different directory.
+ 
 
 # Results
 
