@@ -25,7 +25,7 @@ To avoid shortcomings of manual detection, an automated optical inspection (AOI)
 **Jupyter Notebook** - Final Product.ipynb  
 
 # Dataset
-* There are 693 images in total of 10 different templates of PCBs
+* There are 693 images in total of 10 different templates of PCBs 
 * Types of defects :
     1. Missing Hole
     2. Mouse Bite
@@ -36,7 +36,13 @@ To avoid shortcomings of manual detection, an automated optical inspection (AOI)
 * **For Classification** - A total of 3200 defects (80%-Training & 20%-Testing)
     * Training data - 2560 defects
     * Testing data - 640 defects 
- 
+    
+# Code Description
+1. Reading the input images from the dataset directory and storing in data and template lists
+2. ### Image Processing Algorithms ###
+   * Converting the images to grayscale and applying a Median Filter for denoising.
+           
+   * 
 
     
     
