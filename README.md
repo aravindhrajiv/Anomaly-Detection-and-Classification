@@ -100,5 +100,6 @@ We make a simple Convolutional Neural Network (CNN) inorder to perform this clss
        4. Random Splitting of dataset into 80% Training and 20% Testing
        
       Final shapes of the arrays:
-      ![ss_8](https://user-images.githubusercontent.com/67309253/85381841-00027080-b55c-11ea-863b-71fea4f7340b.PNG)
+      
+          ![ss_8](https://user-images.githubusercontent.com/67309253/85381841-00027080-b55c-11ea-863b-71fea4f7340b.PNG)
     
