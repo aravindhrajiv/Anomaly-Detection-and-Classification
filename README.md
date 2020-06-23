@@ -21,6 +21,21 @@ To avoid shortcomings of manual detection, an automated optical inspection (AOI)
     * Sklearn    : Open Source Machine Learning library
     
 # Python Scripts
+Jupyter Notebook - Final Product.ipynb  
+
+# Dataset
+* There are 693 images in total of 10 different templates of PCBs
+* Types of defects :
+    * Missing Hole
+    * Mouse Bite
+    * Open Circuit
+    * Short Circuit
+    * Spur
+    * Spurious copper
+* *For Classification* - A total of 3200 defects (80%-Training & 20%-Testing)
+    * Training data - 2560 defects
+    * Testing data - 640 defects 
+ 
 
     
     
